@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
+.phrases, .translate, .main-block__window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-block__window {
+  width: 700px;
+  height: 400px;
+  margin: 200px auto 0 auto;
+}
+
+.phrases, .translate {
+  margin: 20px auto;
+  font-size: 22px;
+}
+
+.phrases {
+  font-size: 32px;
+}
+
+.write {
+  font-size: 22px;
+  border: none;
+  border-bottom: 2px solid gray;
+}/*# sourceMappingURL=style.css.map */

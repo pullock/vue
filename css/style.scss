@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none;
+	user-select: none;
+    outline: none;
+}
+
+%tpl_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin wh($width, $height){
+    width: $width;
+    height: $height;
+}
+
+.main-block__window {
+    @extend %tpl_flex;
+    @include wh(700px, 400px);
+    margin: 200px auto 0 auto;
+}
+
+.phrases, .translate {
+    @extend %tpl_flex;
+    margin: 20px auto;
+    font-size: 22px;
+}
+
+.phrases {
+    font-size: 32px;
+}
+
+.write {
+    font-size: 22px;
+    border: none;
+    border-bottom: 2px solid gray;
+}

@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "font_web";
+  src: url("19007.otf");
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,31 +10,17 @@
   -webkit-user-select: none;
   user-select: none;
   outline: none;
+  font-family: "font_web";
 }
 
-.phrases, .translate, .main-block__window {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main-block {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  color: green;
+  padding: 20px 20px;
+  font-size: 20px;
 }
-
-.main-block__window {
-  width: 700px;
-  height: 400px;
-  margin: 200px auto 0 auto;
-}
-
-.phrases, .translate {
-  margin: 20px auto;
-  font-size: 22px;
-}
-
-.phrases {
-  font-size: 32px;
-}
-
-.write {
-  font-size: 22px;
-  border: none;
-  border-bottom: 2px solid gray;
+.main-block .message {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

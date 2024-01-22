@@ -92,10 +92,21 @@ let arrCode = [
     '@media screen and (max-width: 600px) {} - Если экран меньше или равен 600 пикселей',
 ];
 
+let boxCode = [
+    '# if (num === 0) {<br>' +
+    '# &emsp;&emsp; let randomNum = Math.floor(Math.random() * (99 - 1)) + 1;<br>' +
+    '# } else if (num === 1) {<br>' +
+    '# &emsp;&emsp; let randomNum = Math.floor(Math.random() * (199 - 100)) + 100;<br>' +
+    '# } else {<br>' +
+    '# &emsp;&emsp; let randomNum = 0<br>' +
+    '#}'
+];
+
 function showLine(){
     let block = document.querySelectorAll('.main-block');
 
-    block[0].innerHTML += '<div class="message"># ' + arrCode[Math.floor(Math.random() * (arrCode.length - 0)) + 0] + '</div>';
+    //block[0].innerHTML += '<div class="message">' + arrCode[Math.floor(Math.random() * (arrCode.length - 0)) + 0] + '</div>';
+    block[0].innerHTML += '<div class="message">' + boxCode[0] + '</div>';
     window.scrollBy({top: 10000});
 
 }

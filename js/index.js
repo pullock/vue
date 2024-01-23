@@ -32,7 +32,7 @@ let arrCode = [
     '# if(checkbox.checked == true); <br> <span style="color: rgb(0, 43, 0);">- проверка чекбокса</span>',
     '# if(select.selectedIndex == 1); <br> <span style="color: rgb(0, 43, 0);">- проверка элемента списка</span>',
     '# window.scrollBy({top: -10000}); <br> <span style="color: rgb(0, 43, 0);">- прокрутить вверх</span>',
-    '# Math.floor(Math.random() * (max <br> <span style="color: rgb(0, 43, 0);">- min)) + min; <br> <span style="color: rgb(0, 43, 0);">- рандомное число</span>',
+    '# Math.floor(Math.random() * (max - min)) + min; <br> <span style="color: rgb(0, 43, 0);">- рандомное число</span>',
     '# document.querySelector("#id").innerHTML; <br> <span style="color: rgb(0, 43, 0);">- вставить контент</span>',
     '# localStorage.setItem("test", 1); <br> <span style="color: rgb(0, 43, 0);">- записать в локальное хранилище</span>',
     '# const location = window.location.href; <br> <span style="color: rgb(0, 43, 0);">- получить URL</span>',
@@ -71,7 +71,7 @@ let arrCode = [
     '# overflow: hidden; <br> <span style="color: rgb(0, 43, 0);">- Контент не вылезает за пределы окна, полоса прокрутки скрыта</span>',
     '# overflow: scroll; <br> <span style="color: rgb(0, 43, 0);">- Полоса прокрутки отображается</span>',
     '# overflow-x: scroll; <br> <span style="color: rgb(0, 43, 0);">- Горизонтальная полоса прокрутки</span>',
-    '# left: 50%; <br># transform: translate(-50%, 0); <br> <span style="color: rgb(0, 43, 0);">- Выравнивание блока с позицией absolute по центру</span>',
+    '# left: 50%; <br># top: 50%; <br># transform: translate(-50%, -50%); <br> <span style="color: rgb(0, 43, 0);">- Выравнивание блока с позицией absolute по центру</span>',
     '# div p {background-color: yellow;} <br> <span style="color: rgb(0, 43, 0);">- Выбирает элемент р находящийся внутри элемента div</span>',
     '# div + p {background-color: yellow;} <br> <span style="color: rgb(0, 43, 0);">- Первый элемент р после элемента div</span>',
     '# div ~ p {background-color: yellow;} <br> <span style="color: rgb(0, 43, 0);">- Все элементы р после элемента div</span>',
@@ -96,7 +96,31 @@ let arrCode = [
     '# &lt;meta name="keywords" content="HTML"> <br> <span style="color: rgb(0, 43, 0);">- Ключевые слова для поисковых роботов</span>',
     '# &lt;input type="text"> <br> <span style="color: rgb(0, 43, 0);">- Текстовое поле</span>',
     '# maxlength="" <br> <span style="color: rgb(0, 43, 0);">- Атрибут инпута, максимальная длина текста в поле</span>',
-
+    '# pointer-events: none; <br> <span style="color: rgb(0, 43, 0);">- Сделать блок прокликивающимся</span>',
+    '# @import "file.scss"; <br> <span style="color: rgb(0, 43, 0);">- Подключение файлов SASS</span>',
+    '# div {<br># &emsp;&emsp; span {<br># &emsp;&emsp;&emsp;&emsp; color: red;<br># &emsp;&emsp; }<br># }<br> <span style="color: rgb(0, 43, 0);">- Вложенность SASS</span>',
+    '# &:hover {color: blue;} <br> <span style="color: rgb(0, 43, 0);">- Обратиться к верхнему уровню вложенности SASS</span>',
+    '# $var: 100px; <br> <span style="color: rgb(0, 43, 0);">- Переменные SASS</span>',
+    '# %tpl_border {} <br># @extend %tpl_border; <br> <span style="color: rgb(0, 43, 0);">- Шаблоны SASS</span>',
+    '# @mixin name($font, $color){<br># &emsp;&emsp; font-size: $font;<br># &emsp;&emsp; color: $color;<br># }<br># @include name(24px, blue);<br> <span style="color: rgb(0, 43, 0);">- Миксины SASS</span>',
+    '# width: 300px / 960px * 100%; <br> <span style="color: rgb(0, 43, 0);">- Вычисления SASS</span>',
+    '# // Комментарий после двойного слеша. <br> <span style="color: rgb(0, 43, 0);">- Комментарий SASS</span>',
+    '# git init <br> <span style="color: rgb(0, 43, 0);">- Подключить проект к GIT</span>',
+    '# git status <br> <span style="color: rgb(0, 43, 0);">- Проверка статуса</span>',
+    '# git add . <br> <span style="color: rgb(0, 43, 0);">- Добавить файлы</span>',
+    '# git commit -m "name commit" <br> <span style="color: rgb(0, 43, 0);">- Добавить коммит</span>',
+    '# git remote <br> <span style="color: rgb(0, 43, 0);">- - Получение информации о репозитории</span>',
+    '# git push -u origin main <br> <span style="color: rgb(0, 43, 0);">- Добавить новую ветку в репозиторий</span>',
+    '# git push origin main <br> <span style="color: rgb(0, 43, 0);">- Добавить коммит в репозиторий</span>',
+    '# git branch new_branch_name <br> <span style="color: rgb(0, 43, 0);">- Создание новой ветки</span>',
+    '# git checkout -b new_branch_name <br> <span style="color: rgb(0, 43, 0);">- Переход на новую ветку</span>',
+    '# git branch <br> <span style="color: rgb(0, 43, 0);">- Просмотр списка веток</span>',
+    '# git branch -d existing_branch_name <br> <span style="color: rgb(0, 43, 0);">- Удаление ветки</span>',
+    '# git pull <br> <span style="color: rgb(0, 43, 0);">- Получение изменений из удаленного репозитория</span>',
+    '# git merge origin <br> <span style="color: rgb(0, 43, 0);">- Слияние удаленного репозитория и локального</span>',
+    '# git remote add name https://github.com/name/project.git <br> <span style="color: rgb(0, 43, 0);">- Подключить проект к репозиторию</span>',
+    '# git branch -M main <br> <span style="color: rgb(0, 43, 0);">- Создать ветку в проекте</span>',
+    '# editor.hover.enable <br> <span style="color: rgb(0, 43, 0);">- Отключить подсказки в VS Code</span>'
 ];
 
 function showLine(){
@@ -107,4 +131,4 @@ function showLine(){
 
 }
 
-setInterval(showLine, 5000);
+setInterval(showLine, 200);

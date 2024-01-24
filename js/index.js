@@ -317,7 +317,25 @@ let arrChat = [
     '# Count to one hundred and look at the stars that shine above your head.',
     '# Unwrap this package and take out an ancient knife from it.',
     '# Take a spoon and pour sugar into your tea.',
-    '# Place the pot of soup on the gas stove.'
+    '# Place the pot of soup on the gas stove.',
+    '# I don\'t like violence.',
+    '# You need to eat a lot.',
+    '# Drink a liter of water.',
+    '# This guy has a new car.',
+    '# He doesn\'t understand anything.',
+    '# I have three pills for you.',
+    '# He must complete this task.',
+    '# We are entrusted with a great mission.',
+    '# In Diablo two my least favorite city is the third.',
+    '# Go sell all your junk to the store.',
+    '# A soul hunter has arrived in a ghostly city on the river.',
+    '# We walked down the hill and sat on the grass all day.',
+    '# Let\'s drink wine, eat meat and watch TV.',
+    '# I\'m tired of this mess in my apartment.',
+    '# I need to make a shopping list for tomorrow.',
+    '# Look back and you will see me walking behind you.',
+    '# Loneliness drives you crazy.',
+    '# The rest of my days I will work and eat delicious food.'
 ];
 
 function showLine(){

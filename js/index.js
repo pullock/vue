@@ -335,7 +335,24 @@ let arrChat = [
     '# I need to make a shopping list for tomorrow.',
     '# Look back and you will see me walking behind you.',
     '# Loneliness drives you crazy.',
-    '# The rest of my days I will work and eat delicious food.'
+    '# The rest of my days I will work and eat delicious food.',
+    '# I need to write down a few phrases in a notepad.',
+    '# I then told him to come home.',
+    '# Let\'s not continue our relationship.',
+    '# I think we need to break up.',
+    '# Are you sure that\'s exactly what happened?',
+    '# Call an ambulance immediately, a person needs help!',
+    '# Try to inflate this balloon.',
+    '# And then she came up to me and dragged me to her place to have sex.',
+    '# Yes, I\'m actually shocked by what he\'s doing.',
+    '# Turn the page of the book and read what is written in the first line.',
+    '# A few years ago we moved to this house with our family.',
+    '# I\'ve lived in this area all my life.',
+    '# I would like one coffee and one chocolate, please.',
+    '# You must use the correct operators in your expressions.',
+    '# We spend the whole day solving math problems.',
+    '# Have you ever done martial arts?',
+    '# You must realize everything you have done and draw conclusions from it.'
 ];
 
 function showLine(){

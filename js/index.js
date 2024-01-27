@@ -453,8 +453,68 @@ let arrChat = [
     '# Travel builds tolerance and understanding of cultural differences.',
     '# Traveling independently gives you freedom of choice and time management.',
     '# Local fairs and markets are a great place to immerse yourself in local life.',
-    '# Traveling by train along scenic routes is a real pleasure.'
+    '# Traveling by train along scenic routes is a real pleasure.',
+    '# I exercise several times every day.',
+    '# I decided to add some jam to my tea.',
+    '# There were two pies in large plates on the table.',
+    '# He took the TV remote and changed the channel.',
+    '# We rested on the lake shore for several hours.',
+    '# A group of tourists set up camp on the river bank.',
+    '# They walked up the slope to go into the store.',
+    '# A large antenna was installed on the roof of the house.',
+    '# The cats were fucking in the basement.',
+    '# Please translate everything you told me.',
+    '# I\'m not sure our idea will be successful.',
+    '# I need a solution, I don\'t need excuses.',
+    '# Let\'s go on vacation to Europe.',
+    '# I love the history of Europe and all these old castles and villages.',
+    '# Mix all the cards into one pile.',
+    '# There were traces of the car on the road.',
+    '# Step aside and don\'t come back.',
+    '# You need to break two eggs into a glass and mix them with milk.',
+    '# Add some yoghurt to your porridge.',
+    '# I love eating cottage cheese with jam.',
+    '# I absolutely agree with you on this issue.',
+    '# Yes, we\'ve done this several times already.',
+    '# She told us to come into the classroom and take our seats.',
+    '# Let\'s go to the front door and have a smoke there.',
+    '# I like sitting here, why should we leave?',
+    '# Let\'s have coffee and talk about life.',
+    '# It\'s hard for me to hold him, I\'d better let him go.',
+    '# I drink black coffee from a thermos.',
+    '# Where have you been all evening?',
+    '# Did you eat anything this morning?',
+    '# What did you have for breakfast?',
+    '# Did you enjoy dinner?',
+    '# Do you like instant or brewed coffee?',
+    '# Did you see anything strange today?',
+    '# I\'m not sure that we will succeed.',
+    '# You need to click on the icon with a round arrow.',
+    '# There\'s a star inside a circle.',
+    '# Near the monitor there is a dragon with the inscription “Good luck”.',
+    '# The phone is on a stand at the edge of the table.',
+    '# We found ourselves on the edge of the world, alone.',
+    '# I don\'t believe in all these mythical things related to games.',
+    '# I\'m typing text on my laptop keyboard.',
+    '# Turn up the volume on your speakers a little louder.',
+    '# Add a few more phrases and transfer the file to another computer.',
+    '# You need to copy these files to another folder.',
+    '# No, that\'s not how it works, you need to install the bootloader.',
+    '# Turn on your computer and wait for it to boot.',
+    '# I\'m just trying to figure out how to get through these obstacles.',
+    '# There are many obstacles on my way.',
+    '# You need to jump to the end of the route.',
+    '# Put the bag on your head and walk straight all the time.',
+    '# When you get to your destination, stop and get out of the car.',
+    '# Get in the car and don\'t ask stupid questions.',
+    '# You came here on your own, which means you are looking for answers to your questions.',
+    '# Let me lean on your shoulder.',
+    '# Find a seat for me on the bus.',
+    '# Just imagine, he bought himself some useless thing.',
+    '# These are very useful vitamins, just eat them.'
 ];
+
+let num = 0;
 
 function showLine(){
     let block = document.querySelectorAll('.main-block');
@@ -467,7 +527,15 @@ function showLine(){
         arrSet = arrChat;
     }
 
-    block[0].innerHTML += '<div class="message">' + arrSet[Math.floor(Math.random() * (arrSet.length - 0)) + 0] + '</div>';
+    block[0].innerHTML += '<div class="message">' + arrSet[Math.floor(Math.random() * (arrSet.length - 0)) + 0] + '</div>' + 
+    '<span style="color: rgb(0, 43, 0);"># ------------------------------------------------------------------- ' + num + '</span>';
+
+    num++;
+
+    if (num == 500) {
+        block[0].innerHTML = 'Обновление данных...';
+    }
+
     window.scrollBy({top: 10000});
 
 }

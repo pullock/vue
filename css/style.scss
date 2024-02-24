@@ -8,7 +8,87 @@
     -webkit-user-select: none;
 	user-select: none;
     outline: none;
-    font-family: "font_web";
+}
 
-    overflow: scroll;
+.main-block {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(37, 45, 116);
+    color: white;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.body__block {
+
+    height: 70vh;
+
+    .input__block {
+        width: 100%;
+        height: auto;
+
+        div {
+            display: flex;
+            align-items: center;
+            padding: 40px 40px;
+        }
+
+        .inp__text {
+            font-size: 22px;
+            padding: 5px 5px;
+        }
+    }
+
+    .chose__block {
+        width: 100%;
+        height: auto;
+        padding: 0px 40px;
+
+        .div__input {
+            padding: 40px 0;
+        }
+
+        .check__inp {
+            transform: scale(2);
+            margin: 6px;
+        }
+
+        .leble {
+            margin: 0 10px;
+        }
+
+        .button {
+            font-size: 22px;
+            padding: 5px 10px;
+        }
+    }
+
+    .text__block {
+        width: 100%;
+        height: auto;
+        padding: 40px 40px;
+
+        .text {
+            font-size: 20px;
+        }
+    }
+
+}
+
+.footer {
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: white;
 }

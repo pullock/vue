@@ -11,7 +11,29 @@
         <title>Тренировка верстки Num: 2</title>
     </head>
     <body>
-        
+        <div class="header">КРУТОЙ TODO ЛИСТ</div>
+        <div class="body__content" id="app">
+
+            <div class="block">
+                <div class=""><input v-model="text" type="text" placeholder="Ваша запись..."></div>
+                <div class=""> {{ text }} </div>
+            </div>
+
+            <div class="block">
+                <input type="button" v-on:click="addTask()" value="ОТПРАВИТЬ">
+            </div>
+
+            <div class="">
+                <ul>
+                    <li v-for="task in tasks">
+                        <div class=""> {{ task.textTask }} </div>
+                        <div class=""> {{ task.stateTask }} </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer">КРУТОЙ ПОДВАЛ</div>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="js/index.js"></script>

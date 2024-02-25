@@ -9,3 +9,52 @@
 	user-select: none;
     outline: none;
 }
+
+$color: white;
+$size: 34px;
+$size_btn: 22px;
+
+%tpl_display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    height: 15vh;
+    background-color: blue;
+    color: $color;
+    font-size: $size;
+    @extend %tpl_display;
+}
+
+.body__content {
+    width: 1200px;
+    height: 70vh;
+    margin: auto;
+
+    .block {
+        margin: 20px 0;
+    }
+
+    input[type=text] {
+        padding: 5px 5px;
+        font-size: $size_btn;
+    }
+
+    input[type=button] {
+        padding: 10px 15px;
+        font-size: $size_btn;
+    }
+
+}
+
+.footer {
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    color: $color;
+    font-size: $size;
+    @extend %tpl_display;
+}

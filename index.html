@@ -11,24 +11,7 @@
         <title>Тренировка верстки Num: 2</title>
     </head>
     <body>
-        <div class="main-block">
-            <div class="header">КРУТОЙ TODO ЛИСТ</div>
-            <div class="body__block" id="input">
-                <div class="input__block">
-                    <div class=""><input v-model="string" class="inp__text" type="text" placeholder="Введите текст задания..."></div>
-                    <div class=""><span class="text__visible">{{ change() }}</span></div>
-                </div>
-                <div class="chose__block">
-                    <div class="div__input">
-                        <input class="check__inp" v-on:click="radio_1()" type="radio" name="complite" id="one"><span class="leble">Сделать</span>
-                        <input class="check__inp" v-on:click="radio_2()" type="radio" name="complite" id="two"><span class="leble">Сделано</span></div>
-                    <div class="div__input"><input class="button" v-on:click="button()" type="button" value="ДОБАВИТЬ"></div>
-                </div>
-                <div class="text__block">
-                </div>
-            </div>
-            <div class="footer">КРУТОЙ ПОДВАЛ</div>
-        </div>
+        
     </body>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="js/index.js"></script>
